@@ -1,5 +1,5 @@
 :root {
-    --fondo: #22A58E;
+    --fondo: #3E9D7D;
 }
 
 @font-face {
@@ -25,30 +25,47 @@ body {
     margin: auto;
 }
 
+/*HEADER*/
+
 header {
     padding: 0 0;
 }
 
-header .contenedor {
+.nav {
+    width: 100%;
+    height: 150px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 35px 60px;
     position: fixed;
-    padding: 50px 60px;
-
 }
 
-header nav a {
-    color: white;
-    text-decoration: none;
+.nav .active {
+    background: #3E9D7D;
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
     margin: 20px;
 }
 
-header nav a:hover, header nav a.activo {
-    color:#076655;
+.menu li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-header nav .boton {
+.menu li a:hover {
+    color: #076655;
+}
+
+.menu li a .boton {
     display: inline-block;
     padding: 11px 25px;
     background-color: rgba(0, 0, 0, 0);
@@ -58,15 +75,126 @@ header nav .boton {
     font-size: 16px;
     cursor: pointer;
     transition: .3s ease all;
+    margin-top: -10px;
+    outline: none;
 }
 
-.contenedor .boton:hover {
+.menu .boton:hover {
+    scale: 1.05;
     background:#1ac0a2;
     color: white;
     border: none;
 }
 
-.fondo-principal {
+.menu .boton:active{
+    scale: 0.95;
+}
+
+.nav .toggle-btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*DROPDOWN MENU*/
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 90px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu li {
+    list-style: none;
+}
+
+.dropdown_menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown_menu li a:hover {
+    color: #076655;
+}
+
+.dropdown_menu li a .boton {
+    display: inline-block;
+    padding: 11px 20px;
+    background-color: #1ac0a2;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-top: -10px;
+    outline: none;
+}
+
+.dropdown_menu .boton:hover {
+    scale: 1.05;
+    background: none;
+    color: white;
+    border: 1.8px solid white;
+}
+
+.dropdown_menu .boton:active{
+    scale: 0.95;
+}
+
+.dropdown_menu.open {
+    height: 260px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li a .boton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*RESPONSIVE DESIGN*/
+@media(max-width: 880px){
+    .nav .menu,
+    .nav .boton{
+        display: none;
+    }
+
+    .nav .toggle-btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/*SECCION PRINCIPAL*/
+
+#seccion-principal {
+    height: calc(100vh - 150px);
     font-size: 16px;
     min-height: 55em;
     color: white;
@@ -78,18 +206,22 @@ header nav .boton {
     align-items: end;
 }
 
-.fondo-principal .contenedor {
-    margin: 0 auto;
+#seccion-principal .contenedor {
     margin-bottom: 15em;
     padding: 50px 60px;
 }
 
-.fondo-principal .divisor {
-    width: 450px;
+#seccion-principal img {
+    height: 100px;
+    width: 270px;
+}
+
+#seccion-principal .divisor {
+    width: 400px;
     margin-bottom: 20px;
 }
 
-.fondo-principal .descripcion {
+#seccion-principal .descripcion {
     font-weight: normal;
     font-size: 1em;
     line-height: 1.75em;
@@ -97,11 +229,11 @@ header nav .boton {
     margin-bottom: 1.25em;
 }
 
-.fondo-principal .boton2 {
+#seccion-principal .boton2 {
     font-family: AvantGarde LT Mediana;
     display: inline-block;
     padding: 16px 25px;
-    background-color:#22A58E;
+    background-color:#22a58d9a;
     color: white;
     border-radius: 30px;
     border: none;
@@ -109,20 +241,35 @@ header nav .boton {
     cursor: pointer;
     transition: .3s ease all;
     box-shadow: 5px 5px 10px -5px #08463a;
+    outline: none;
 }
 
-.quienes-somos {
+#seccion-principal .boton2:hover {
+    scale: 1.05;
+    background: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1.8px solid white;
+}
+
+#seccion-principal .boton2:active {
+    scale: 0.95;
+}
+
+/*QUIENES SOMOS*/
+
+#quienes-somos {
     margin: 0 auto;
     padding: 50px 60px;
 }
 
-.quienes-somos .intro {
+#quienes-somos .intro {
     font-size: 16px;
     min-height: 10px;
     color: white;
 }
 
-.quienes-somos .titulo {
+#quienes-somos .titulo {
     font-family: AvantGarde LT Mediana;
     font-weight: normal;
     font-size: 40px;
@@ -132,13 +279,13 @@ header nav .boton {
     color: white;
 }
 
-.quienes-somos .divisor2 {
+#quienes-somos .divisor2 {
     width: 1225px;
     margin-bottom: 20px;
     color: white;
 }
 
-.quienes-somos .descripcion {
+#quienes-somos .descripcion {
     font-weight: normal;
     font-size: 1em;
     line-height: 1.75em;
@@ -179,21 +326,22 @@ header nav .boton {
     line-height: 1.5em;
 }
 
+/*CATALOGO*/
 
-.catalogo {
+#catalogo {
     margin: 0 auto;
     padding: 20px 60px;
     background-color: #091E28;
     
 }
 
-.catalogo .inicio {
+#catalogo .inicio {
     font-size: 16px;
     min-height: 10px;
     color: white;
 }
 
-.catalogo .titulo {
+#catalogo .titulo {
     font-family: AvantGarde LT Mediana;
     font-weight: normal;
     font-size: 40px;
@@ -203,13 +351,13 @@ header nav .boton {
     color: white;
 }
 
-.catalogo .divisor3 {
+#catalogo .divisor3 {
     width: 1225px;
     margin-bottom: 20px;
     color: white;
 }
 
-.catalogo .descripcion {
+#catalogo .descripcion {
     font-weight: normal;
     font-size: 1em;
     line-height: 1.75em;
@@ -217,7 +365,7 @@ header nav .boton {
     margin-bottom: 1.25em;
 }
 
-.catalogo .imagenes {
+#catalogo .imagenes {
     display: flex;
     margin-left: -45px;
     width: 800px;
@@ -243,7 +391,9 @@ header nav .boton {
     margin-right: -50px;
 }
 
-.carrusel {
+/*CARRUSEL*/
+
+#carrusel {
     font-size: 16px;
     min-height: 40em;
     color: white;
@@ -253,19 +403,19 @@ header nav .boton {
     background-size:cover;
 }
 
-.carrusel .carrusel-parte-uno{
+#carrusel .carrusel-parte-uno{
     font-size: 16px;
     color: white;
     display: flex;
 }
 
-.carrusel .contenedor2 {
+#carrusel .contenedor2 {
     margin: 0 auto;
     margin-bottom: 15em;
     padding: 50px 60px;
 }
 
-.carrusel .form {
+#carrusel .form {
     background-color: #22a58d65;
     width: 90%;
     border-radius: 30px;
@@ -282,7 +432,7 @@ header nav .boton {
     justify-content: space-around;
 }
 
-.carrusel .titulo {
+#carrusel .titulo {
     font-family: AvantGarde LT Mediana;
     font-weight: normal;
     font-size: 40px;
@@ -292,7 +442,7 @@ header nav .boton {
     margin: 10px;
 }
 
-.carrusel .datos-curiosos {
+#carrusel .datos-curiosos {
     font-weight: normal;
     font-size: 1em;
     line-height: 1.75em;
@@ -301,13 +451,13 @@ header nav .boton {
     margin: 10px;
 }
 
-.carrusel .texto {
+#carrusel .texto {
     margin: 0 auto;
     padding: 0px 60px 30px;
     align-items: center;
 }
 
-.carrusel .boton3 {
+#carrusel .boton3 {
     font-family: AvantGarde LT Mediana;
     display: inline-block;
     padding: 16px 25px;
@@ -321,14 +471,14 @@ header nav .boton {
     box-shadow: 5px 5px 10px -5px #08463a;
 }
 
-.carrusel .boton3:hover {
+#carrusel .boton3:hover {
     background: none;
     color: white;
     background-color: rgba(0, 0, 0, 0.151);
     border: 1.8px solid white;
 }
 
-.carrusel .texto .subtitulo {
+#carrusel .texto .subtitulo {
     font-family: AvantGarde LT Mediana;
     font-weight: normal;
     font-size: 30px;
@@ -336,7 +486,7 @@ header nav .boton {
     color: white;
 }
 
-.carrusel .texto .titulo {
+#carrusel .texto .titulo {
     font-family: AvantGarde LT Mediana;
     font-weight: normal;
     font-size: 70px;
@@ -345,14 +495,16 @@ header nav .boton {
     color: white;
 }
 
-.promocion {
+/*PROMOCION*/
+
+#promocion {
     background-color: #091E28;
     font-size: 16px;
     min-height: 45em;
     color: white;
 }
 
-.promocion .titulo {
+#promocion .titulo {
     font-family: AvantGarde LT Mediana;
     font-weight: normal;
     font-size: 30px;
@@ -362,7 +514,7 @@ header nav .boton {
     padding-top: 70px;
 }
 
-.promocion .mockups {
+#promocion .mockups {
     margin-right: 200px;
     margin-left: 160px;
     height: 500px;
@@ -370,7 +522,7 @@ header nav .boton {
     align-items: center;
 }
 
-.promocion .boton4 {
+#promocion .boton4 {
     display: inline-block;
     padding: 11px 25px;
     margin-left: 575px;
@@ -383,13 +535,15 @@ header nav .boton {
     transition: .3s ease all;
 }
 
-.promocion .boton4:hover {
+#promocion .boton4:hover {
     background: #00090e;
     color: white;
     border: none;
 }
 
-.contactanos {
+/*CONTACTO*/
+
+#contactanos {
     font-size: 16px;
     min-height: 40em;
     color: white;
@@ -398,7 +552,7 @@ header nav .boton {
     background-size:cover;
 }
 
-.contactanos .formulario {
+#contactanos .formulario {
     background-color: #228a77b0;
     width: 400px;
     border-radius: 25px;
@@ -408,7 +562,7 @@ header nav .boton {
     padding: 30px;
 }
 
-.formulario h3 {
+#formulario h3 {
     font-family: AvantGarde LT Mediana;
     font-weight: normal;
     font-size: 20px;
@@ -457,11 +611,11 @@ header nav .boton {
     border: none;
 }
 
-.contactanos .contacto .textos {
+#contactanos .contacto .textos {
     display: flex;
 }
 
-.contactanos .contacto h3 {
+#contactanos .contacto h3 {
     font-family: AvantGarde LT Mediana;
     font-weight: normal;
     font-size: 60px;
@@ -470,7 +624,7 @@ header nav .boton {
     margin-left: 150px;
 }
 
-.contactanos .contacto .nuestro-contacto h4 {
+#contactanos .contacto .nuestro-contacto h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 20px;
@@ -480,7 +634,7 @@ header nav .boton {
     margin-bottom: 20px;
 }
 
-.contactanos .contacto .nuestro-contacto p {
+#contactanos .contacto .nuestro-contacto p {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 15px;
@@ -490,7 +644,7 @@ header nav .boton {
     margin-bottom: 20px;
 }
 
-.contactanos .contacto .nuestras-oficinas h4 {
+#contactanos .contacto .nuestras-oficinas h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 20px;
@@ -500,7 +654,7 @@ header nav .boton {
     margin-bottom: 20px;
 }
 
-.contactanos .contacto .nuestras-oficinas p {
+#contactanos .contacto .nuestras-oficinas p {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 15px;

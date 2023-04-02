@@ -5,49 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@100;300;400;500&display=swap"
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles-landing.css">
     <title>GHIFLIX</title>
 </head>
 
 <body>
     <header>
-        <div class="contenedor">
-            <a href="#"><img class="Logotipo"
-                src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\1-LOGO GHIBLI BLANCO.png" alt=""
-                height="60px" width="130px"></a>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">¿Quiénes somos?</a>
-                <a href="#">Catálogo</a>
-                <a href="#">Contáctanos</a>
-                <a href="#">Registrate</a>
-                <a href="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\2. INICIO SESION\index-iniciar.html">
-                    <button role="button" class="boton">Iniciar Sesión</button></a>
-            </nav>
+        <nav class="nav">
+            <div class="Logotipo"><a href="#"><img class="Logotipo"
+                        src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\1-LOGO GHIBLI BLANCO.png"
+                        height="60px" width="130px"></a></div>
+            <ul class="menu">
+                <li><a href="#seccion-principal">Inicio</a></li>
+                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contactanos">Contáctanos</a></li>
+                <li><a href="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\3. REGISTRO\index-registro.html">Registrate</a></li>
+                <li><a href="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\2. INICIO SESION\index-iniciar.html"><button
+                            role="button" class="boton">Iniciar Sesión</button></a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </nav>
+
+        <div class="dropdown_menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">¿Quiénes somos?</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\3. REGISTRO\index-registro.html">Registrate</a>
+                </li>
+                <li><a href="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\2. INICIO SESION\index-iniciar.html"><button
+                            role="button" class="boton">Iniciar Sesión</button></a></li>
         </div>
-
     </header>
-
+   
     <main>
-        <div class="fondo-principal">
+        <section id="seccion-principal">
             <div class="contenedor">
-                <img src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\2-LOGO GHIFLIX BLANCO.png"
-                    alt="" height="100px" width="270px">
+                <img src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\2-LOGO GHIFLIX BLANCO.png">
                 <hr class="divisor">
                 <p class="descripcion">
                     Ghiflix es la plataforma que te permite disfrutar de todas las películas que el prestigioso Studio
                     Ghibli. Desde dramas de guerra, hasta películas llenas de mundos fantásticos. Esta es la mejor
                     opción de entretenimiento que puedes conseguir.
                 </p>
-                <button role="button" class="boton2">Nuestro Catálogo</button>
+                <a href="#"></a><button role="button" class="boton2">Nuestro Catálogo</button></a>
             </div>
-        </div>
+        </section>
 
-        <section class="quienes-somos">
+        <section id="quienes-somos">
             <div class="intro">
                 <h3 class="titulo">¿QUIÉNES SOMOS?</h3>
                 <hr class="divisor2">
@@ -76,7 +92,8 @@
                     reiciendis. Hic, commodi quos nostrum eligendi ab impedit saepe temporibus.</p>
             </div>
         </section>
-        <section class="catalogo">
+
+        <section id="catalogo">
             <div class="inicio">
                 <h3 class="titulo">CATÁLOGO</h3>
                 <hr class="divisor3">
@@ -88,17 +105,19 @@
                     src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\6-TOTORO-POSTER.png" alt="">
                 <img class="chihiro"
                     src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\7-CHIHIRO-POSTER.png" alt="">
-                <img class="kiki"
-                    src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\8-KIKI-POSTER.png" alt="">
+                <img class="kiki" src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\8-KIKI-POSTER.png"
+                    alt="">
                 <img class="princess"
                     src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\9-PRINCESS-POSTER.png" alt="">
             </div>
         </section>
 
-        <section class="carrusel">
+        <section id="carrusel">
             <section class="carrusel-parte-uno">
                 <div class="contenedor2">
-                    <img class="logo-chihiro"src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\10-SPIRITED AWAY-LOGO.png"alt="">
+                    <img class="logo-chihiro"
+                        src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\10-SPIRITED AWAY-LOGO.png"
+                        alt="">
                 </div>
                 <form class="form">
                     <div class="info">
@@ -126,17 +145,17 @@
             </div>
         </section>
 
-        <section class="promocion">
+        <section id="promocion">
             <div class="info">
                 <h3 class="titulo">¿TODAVÍA NO TIENES UNA CUENTA?</h3>
                 <img class="mockups"
-                    src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\12-MOCKUPS-TV-COMPU.png"
-                    alt="">
-                    <a href="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\3. REGISTRO\index-registro.html"><button role="button" class="boton4">REGÍSTRATE</button></a>
+                    src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\img\12-MOCKUPS-TV-COMPU.png" alt="">
+                <a href="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\3. REGISTRO\index-registro.html"><button
+                        role="button" class="boton4">REGÍSTRATE</button></a>
             </div>
         </section>
 
-        <section class="contactanos">
+        <section id="contactanos">
 
             <section class="formulario">
                 <form class="fomr">
@@ -144,7 +163,8 @@
                     <input class="controls" type="text" id="nombre" placeholder="Nombres">
                     <input class="controls" type="email" id="email" placeholder="Email">
                     <input class="controls" type="tel" id="telefono" placeholder="Teléfono">
-                    <textarea class="controls" id="dudas" placeholder="Envíanos tus dudas" cols="30" rows="10"></textarea>
+                    <textarea class="controls" id="dudas" placeholder="Envíanos tus dudas" cols="30"
+                        rows="10"></textarea>
                     <input class="botons" type="submit" value="ENVIAR">
                 </form>
             </section>
@@ -168,5 +188,8 @@
 
     </main>
 </body>
+<footer>
+    <script src="./script-landing.js"></script>
+</footer>
 
 </html>
