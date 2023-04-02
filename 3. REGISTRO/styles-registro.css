@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'AvantGarde LT Mediana';
+    src: url('../FONT/AvantGarde\ LT\ Mediana.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+body {
+    background-image: url("./img/2-FONDO-REGISTRO.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    margin: 0;
+    font-family: roboto, sans-serif;
+}
+
+.logo {
+    float: right;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.logo .totoro {
+    width: 250px;
+    height: 107px;
+    margin-top: 15px;
+}
+
+.cuadro {
+    width: 540px;
+    height: 580px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), rgba(34, 165, 141, 0.767);
+    margin-left: 6%;
+    border-radius: 5%;
+    position: absolute;
+}
+
+section {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+p {
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    padding-top:  0%;
+    padding-left: 10%;
+    margin-top: 10%;
+    font-family: 'AvantGarde LT Mediana';
+}
+.bverde {
+    font-size:14px; 
+    color: rgba(255, 255, 255, 0.808);
+    background-color:rgba(150, 189, 50, 0.62);;
+    border-radius: 50px;
+    height: 25px;
+    width: 180px;
+    padding: 8px;
+    padding-top: 1%;
+    margin-left: 10%;
+    display: table-row;
+    border: none;
+    margin-block: 20px;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: #ABD04B;
+    margin-left: 2%;
+    font-size: 15px;
+}
+
+a:hover{
+    color: #b6fd03;
+}
+
+label{
+    color: white;
+    font-size: 15px;
+    position: center;
+    margin-left: 3%;
+    margin-block: 20px;
+    padding-top: 5px;
+}
+
+.label{
+    display: flex;
+    margin-left: 15%;
+    padding-top: 5px;
+}
+::placeholder{
+color: white;
+text-align: left;
+}
+#check{
+    margin-left: 10%;
+    margin-right: 0;
+}
+button{
+    color: white;
+    display: inline-block;
+    background: none;
+    border: 1.8px solid white;
+    font-size: 16px;
+    font-weight: 540px;
+    border-radius: 30px;
+    height: 45px;
+    width: 175px;
+    border-style: solid;
+    text-decoration: none;
+    margin-left: 34%;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: .3s ease all;    
+}
+
+button:hover{
+    background:#96BD32;
+    color: white;
+    border: none;
+}

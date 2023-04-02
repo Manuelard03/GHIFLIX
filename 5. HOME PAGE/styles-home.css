@@ -1,0 +1,423 @@
+:root {
+    --fondo: #091E28;
+}
+
+@font-face {
+    font-family: 'AvantGarde LT Mediana';
+    src: url('../FONT/AvantGarde\ LT\ Mediana.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    padding: 0 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 50px 60px;
+
+}
+
+header nav {
+    position: absolute;
+    width: 530px;
+    height: 21px;
+    left: 297px;
+    top: 97px;
+}
+
+header nav a {
+    color: #091E28;
+    text-decoration: none;
+    margin: 20px;
+}
+
+header nav a:hover, header nav a.activo {
+    color: white;
+}
+
+
+
+.container {
+    display: flex;
+}
+
+input {
+	font:inherit;
+}
+
+form {
+    position: absolute;
+    left: 950px;
+    top: 60px;
+}
+
+form > div {
+	display: flex;
+    background:#091e28a1;
+	padding: 9px 22px 9px 26px;
+	border-radius: 30px;
+	border:none;
+}
+form input {
+	border:none;
+	background: transparent;
+    color: white;
+    font-family: AvantGarde LT Mediana;
+	font-weight: lighter;
+	padding-left: 24px;
+	background-size: 16px;
+	background-repeat: no-repeat;
+	width: 0px;
+	transition: all 1s;
+}
+form input:focus {
+	outline: none;
+	width: 300px;
+}
+
+.perfil .logo-perfil {
+    position: absolute;
+    width: 90px;
+    height: 80px;
+    left: 1200px;
+    top: 30px;
+}
+
+.fondo-principal {
+    font-size: 16px;
+    min-height: 55em;
+    color: white;
+    background: url(./img/2-FONDO-PELICULA-PRINCIPAL.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: end;
+}
+
+.fondo-principal .contenedor {
+    margin: 0 auto;
+    margin-bottom: 15em;
+    padding: 50px 60px;
+}
+
+.fondo-principal .divisor {
+    width: 450px;
+    margin-bottom: 20px;
+}
+
+.fondo-principal .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 40%;
+    margin-bottom: 1.25em;
+}
+
+.fondo-principal .boton2 {
+    font-family: AvantGarde LT Mediana;
+    display: inline-block;
+    padding: 16px 25px;
+    background-color:#091E28;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    position: absolute;
+    left: 132px;
+    top: 644px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.fondo-principal .boton3 {
+    font-family: AvantGarde LT Mediana;
+    display: inline-block;
+    padding: 16px 25px;
+    background-color: rgba(0, 0, 0, 0.473);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    position: absolute;
+    position: absolute;
+    left: 388px;
+    top: 644px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.contenedor .genero {
+    position: absolute;
+    width: 67px;
+    height: 66px;
+    left: 1200px;
+    top: 409px;
+}
+
+.contenedor .genero .texto {
+    font-size: 20px;
+    line-height: 24px;
+    left: 1250px;
+    margin-top: 10px;
+}
+
+
+.buscados {
+    margin: 0 auto;
+    padding: 50px 60px;
+}
+
+.buscados .intro {
+    font-size: 16px;
+    min-height: 10px;
+    color: white;
+}
+
+.buscados .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.75em;
+    max-width: 90%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.buscados .divisor2 {
+    width: 1225px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.buscados .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 70%;
+    margin-bottom: 1.25em;
+}
+
+.buscados {
+    margin: 0 auto;
+    padding: 20px 60px;
+    background-color: #091E28;
+    
+}
+
+.buscados .intro {
+    font-size: 16px;
+    min-height: 10px;
+    color: white;
+}
+
+.buscados .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 1.75em;
+    max-width: 90%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.buscados .divisor3 {
+    width: 1225px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.buscados .imagenes {
+    display: flex;
+    width: 800px;
+    height: 500px;
+}
+
+.imagenes .castillo-ambulante {
+    margin: 20px;
+    margin-left: 50px;
+    width: 396px;
+    height: 530px;
+}
+
+.imagenes .ponyo {
+    margin: 20px;
+    width: 335px;
+    height: 460px;
+    left: 537px;
+    top: 1154px;
+}
+
+.imagenes .mononoke {
+    margin: 20px;
+    width: 335px;
+    height: 461px;
+    left: 932px;
+    top: 1154px;
+
+}
+
+
+.viendo {
+    margin: 0 auto;
+    padding: 50px 60px;
+}
+
+.viendo .intro {
+    font-size: 16px;
+    min-height: 10px;
+    color: white;
+}
+
+.viendo .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.75em;
+    max-width: 90%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.viendo .divisor {
+    width: 1225px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.viendo .peliculas {
+    display: flex;
+}
+
+.peliculas .pelicula {
+    position: absolute;
+    width: 549px;
+    height: 366px;
+    left: 70px;
+    top: 1816px;
+}
+
+
+.peliculas .pelicula2 {
+    position: absolute;
+    width: 560px;
+    height: 366px;
+    left: 660px;
+    top: 1816px;
+
+}
+
+.peliculas .pelicula3 {
+    position: absolute;
+    width: 90px;
+    height: 366px;
+    left: 1259px;
+    top: 1816px;
+}
+
+
+.formulario h3 {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.75em;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 98px;
+
+}
+
+.controls {
+    width: 100%;
+    color: white;
+    background-color: #7aa0bc8a;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.formulario .botons {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 30px;
+    border: 1.8px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin: 16px 0;
+    margin-left: 110px;
+}
+
+.formulario .botons:hover {
+    background:#1ac0a2;
+    color: white;
+    border: none;
+}
+
+.recomendado {
+    border: 50px;
+    margin: 0 auto;
+    padding: 500px 50px;
+    padding-bottom: 50px;
+}
+
+.recomendado .intro {
+    font-size: 16px;
+    min-height: 10px;
+    color: white;
+}
+
+.recomendado .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.75em;
+    max-width: 90%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.recomendado .divisor {
+    width: 1225px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.recomendado .pelicula .arriety {
+    position: absolute;
+    width: 1254px;
+    height: 914px;
+    left: 93px;
+    top: 2338px;
+}

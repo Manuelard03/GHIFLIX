@@ -1,0 +1,511 @@
+:root {
+    --fondo: #22A58E;
+}
+
+@font-face {
+    font-family: 'AvantGarde LT Mediana';
+    src: url('../FONT/AvantGarde\ LT\ Mediana.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    padding: 0 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 50px 60px;
+
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+header nav a:hover, header nav a.activo {
+    color:#076655;
+}
+
+header nav .boton {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 30px;
+    border: 1.8px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.contenedor .boton:hover {
+    background:#1ac0a2;
+    color: white;
+    border: none;
+}
+
+.fondo-principal {
+    font-size: 16px;
+    min-height: 55em;
+    color: white;
+    background: url(./img/3-FONDO-PRINCIPAL-HOWL.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: end;
+}
+
+.fondo-principal .contenedor {
+    margin: 0 auto;
+    margin-bottom: 15em;
+    padding: 50px 60px;
+}
+
+.fondo-principal .divisor {
+    width: 450px;
+    margin-bottom: 20px;
+}
+
+.fondo-principal .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 40%;
+    margin-bottom: 1.25em;
+}
+
+.fondo-principal .boton2 {
+    font-family: AvantGarde LT Mediana;
+    display: inline-block;
+    padding: 16px 25px;
+    background-color:#22A58E;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px -5px #08463a;
+}
+
+.quienes-somos {
+    margin: 0 auto;
+    padding: 50px 60px;
+}
+
+.quienes-somos .intro {
+    font-size: 16px;
+    min-height: 10px;
+    color: white;
+}
+
+.quienes-somos .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.75em;
+    max-width: 90%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.quienes-somos .divisor2 {
+    width: 1225px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.quienes-somos .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 70%;
+    margin-bottom: 1.25em;
+}
+
+.persona1 {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.persona1 .texto-persona1 {
+    margin-top: 150px;
+    margin-right: -540px;
+    color: white;
+    line-height: 1.5em;
+    text-align: right;
+}
+
+.persona1 .imagen1 {
+    margin-left: 600px;
+    margin-top: 50px;
+}
+
+.persona2 {
+    display: flex;
+    align-items: center;
+
+}
+
+.persona2 .texto-persona2 {
+    margin-top: 150px;
+    margin-left: 30px;
+    max-width: 50%;
+    color: white;
+    line-height: 1.5em;
+}
+
+
+.catalogo {
+    margin: 0 auto;
+    padding: 20px 60px;
+    background-color: #091E28;
+    
+}
+
+.catalogo .inicio {
+    font-size: 16px;
+    min-height: 10px;
+    color: white;
+}
+
+.catalogo .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.75em;
+    max-width: 90%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.catalogo .divisor3 {
+    width: 1225px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.catalogo .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 100%;
+    margin-bottom: 1.25em;
+}
+
+.catalogo .imagenes {
+    display: flex;
+    margin-left: -45px;
+    width: 800px;
+    height: 500px;
+}
+
+.imagenes .totoro {
+    margin: 20px;
+}
+
+.imagenes .chihiro {
+    margin: 20px;
+}
+
+.imagenes .kiki {
+    margin: 20px;
+}
+
+.imagenes .princess {
+    width: 255px;
+    height: 380px;
+    margin-top: 100px;
+    margin-right: -50px;
+}
+
+.carrusel {
+    font-size: 16px;
+    min-height: 40em;
+    color: white;
+    background: url(./img/11-FONDO-CHIHIRO-SPIRITED\ AWAY.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.carrusel .carrusel-parte-uno{
+    font-size: 16px;
+    color: white;
+    display: flex;
+}
+
+.carrusel .contenedor2 {
+    margin: 0 auto;
+    margin-bottom: 15em;
+    padding: 50px 60px;
+}
+
+.carrusel .form {
+    background-color: #22a58d65;
+    width: 90%;
+    border-radius: 30px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    min-height: 50vh;
+    padding: 40px 40px;
+    font-size: 16px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+    box-sizing: content-box;
+    justify-content: space-around;
+}
+
+.carrusel .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.75em;
+    max-width: 90%;
+    color: white;
+    margin: 10px;
+}
+
+.carrusel .datos-curiosos {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 100%;
+    margin-bottom: 1.25em;
+    margin: 10px;
+}
+
+.carrusel .texto {
+    margin: 0 auto;
+    padding: 0px 60px 30px;
+    align-items: center;
+}
+
+.carrusel .boton3 {
+    font-family: AvantGarde LT Mediana;
+    display: inline-block;
+    padding: 16px 25px;
+    background-color:#22A58E;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px -5px #08463a;
+}
+
+.carrusel .boton3:hover {
+    background: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.151);
+    border: 1.8px solid white;
+}
+
+.carrusel .texto .subtitulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.75em;
+    color: white;
+}
+
+.carrusel .texto .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 1.75em;
+    max-width: 90%;
+    color: white;
+}
+
+.promocion {
+    background-color: #091E28;
+    font-size: 16px;
+    min-height: 45em;
+    color: white;
+}
+
+.promocion .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 400px;
+    padding-top: 70px;
+}
+
+.promocion .mockups {
+    margin-right: 200px;
+    margin-left: 160px;
+    height: 500px;
+    width: 950px;
+    align-items: center;
+}
+
+.promocion .boton4 {
+    display: inline-block;
+    padding: 11px 25px;
+    margin-left: 575px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 30px;
+    border: 1.8px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.promocion .boton4:hover {
+    background: #00090e;
+    color: white;
+    border: none;
+}
+
+.contactanos {
+    font-size: 16px;
+    min-height: 40em;
+    color: white;
+    background: url(./img/13-FONDO-CONTACTO.png);
+    background-position: center center;
+    background-size:cover;
+}
+
+.contactanos .formulario {
+    background-color: #228a77b0;
+    width: 400px;
+    border-radius: 25px;
+    color: white;
+    margin-left: 800px;
+    border-top: 50px;
+    padding: 30px;
+}
+
+.formulario h3 {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.75em;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 98px;
+
+}
+
+.controls {
+    width: 100%;
+    color: white;
+    background-color: #7aa0bc8a;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.controls::placeholder {
+    color: rgba(255, 255, 255, 0.671);
+}
+
+.formulario .botons {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 30px;
+    border: 1.8px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin: 16px 0;
+    margin-left: 110px;
+}
+
+.formulario .botons:hover {
+    background:#1ac0a2;
+    color: white;
+    border: none;
+}
+
+.contactanos .contacto .textos {
+    display: flex;
+}
+
+.contactanos .contacto h3 {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 150px;
+}
+
+.contactanos .contacto .nuestro-contacto h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+.contactanos .contacto .nuestro-contacto p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+.contactanos .contacto .nuestras-oficinas h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+.contactanos .contacto .nuestras-oficinas p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
