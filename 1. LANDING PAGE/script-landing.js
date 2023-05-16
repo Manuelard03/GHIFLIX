@@ -1,3 +1,5 @@
+/*Landing-page*/
+
 /*Responsive menu*/
 const togglebtn = document.querySelector('.toggle-btn')
         const togglebtnIcon = document.querySelector('.toggle-btn i')

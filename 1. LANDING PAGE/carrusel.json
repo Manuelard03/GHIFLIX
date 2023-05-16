@@ -1,0 +1,75 @@
+{
+    "imagenes": [
+        {
+            "id": 1,
+            "title": "Totoro",
+            "imagen": "./IMG SECTION CATALOGO/TOTORO-POSTER"
+        },
+
+        {
+            "id": 2,
+            "title": "Chihiro",
+            "imagen": "./IMG SECTION CATALOGO/CHIHIRO-POSTER"
+        },
+
+        {
+            "id": 3,
+            "title": "Kiki",
+            "imagen": "./IMG SECTION CATALOGO/KIKI-POSTER"
+        },
+        {
+            "id": 4,
+            "title": "Princess",
+            "imagen": "./IMG SECTION CATALOGO/PRINCESS-POSTER"
+        },
+
+        {
+            "id": 5,
+            "title": "Ponyo",
+            "imagen": "./IMG SECTION CATALOGO/PONYO-POSTER"
+        },
+
+        {
+            "id": 6,
+            "title": "Only yesterday",
+            "imagen": "./IMG SECTION CATALOGO/ONLY YESTERDAY-POSTER"
+        },
+
+        {
+            "id": 7,
+            "title": "Poppy hill",
+            "imagen": "./IMG SECTION CATALOGO/FROM UP ON POPPY HILL-POSTER"
+        },
+
+        {
+            "id": 8,
+            "title": "Ocean waves",
+            "imagen": "./IMG SECTION CATALOGO/OCEAN WAVES-POSTER"
+        },
+
+        {
+            "id": 9,
+            "title": "Pompoko",
+            "imagen": "./IMG SECTION CATALOGO/POMPOKO-POSTER"
+        },
+
+        {
+            "id": 10,
+            "title": "Marnie",
+            "imagen": "./IMG SECTION CATALOGO/MARNIE-POSTER"
+        },
+
+        {
+            "id": 11,
+            "title": "Tales from Earthsea",
+            "imagen": "./IMG SECTION CATALOGO/TALES FROM EARTHSEA-POSTER"
+        },
+
+        {
+            "id": 12,
+            "title": "Porco Rosse",
+            "imagen": "./IMG SECTION CATALOGO/PORCO ROSSO-POSTER"
+        }
+
+    ]
+}
