@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/LOGO SIMPLE VERDE CLARO.ico">
     <title>REGISTRO</title>
 
 </head>
@@ -21,14 +22,22 @@
         </div>
         <div class="cuadro">
             <p class="titulo"">REGISTRATE</p> 
-       <input class=" bverde" type="text" placeholder="  Nombre" required />
+            
+            <input class=" bverde" type="text" placeholder="  Nombre" required />
             <input class="bverde" type="text" placeholder="  Apellido" required />
             <input class="bverde" type="tel" placeholder="  Telefono" required />
             <input class="bverde" type="email" placeholder="  Correo" required />
             <input class="bverde" type="password" placeholder="  Contraseña" required />
             <input class="bverde" type="password" placeholder="  Confirmar contraseña" required />
-            <input type="checkbox" id="check" required />
-            <label>Acepto los terminos y politicas de privacidad</label>
+            
+            <div class="terminos">
+                <div id="boton-terminos">
+                    <input type="checkbox" id="btn-switch" required />
+                    <label for="btn-switch" class="lbl-switch"></label>
+                </div>
+                <label>Acepto los terminos y politicas de privacidad</label>
+            </div>
+            
             <label class="label">¿Ya tienes una cuenta? <a
                     href="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\2. INICIO SESION\index-iniciar.html">Inicia
                     Sesión</a></label>

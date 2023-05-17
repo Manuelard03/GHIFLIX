@@ -28,10 +28,19 @@ body {
     position: absolute;
     margin-top: 15px;
     left: 100px;
-
+    cursor: pointer;
+    transition: .3s ease all;
 }
 
-.cuadro {
+.logo .totoro:hover {
+    scale: 1.05;
+}
+
+.logo .totoro:active{
+    scale: 0.95;
+}
+
+.formulario-inicio {
     width: 400px;
     height: 550px;
     border-radius: 5%;
@@ -71,18 +80,20 @@ p {
     border: none;
     margin-block: 20px;
     vertical-align: middle;
+    outline: none;
     
 }
 
-.class{
+.ayuda {
     text-decoration: none;
     color: #7aa0bc95;
-    margin-left: 13%;
+    margin-left: 10%;
     font-size: 14px;
+    margin-top: 18px;
     
 }
 
-.class:hover {
+.ayuda:hover {
     color: #00090e;
 }
 
@@ -92,6 +103,9 @@ p {
     margin-left: 2%;
     font-size: 14px;
 
+}
+.recuerdame {
+    display: flex;
 }
 
 label{
@@ -110,15 +124,47 @@ label{
 }
 
 ::placeholder{
-color: white;
-text-align: left;
+    color: white;
+    text-align: left;
 }
 
-#check{
+#boton-check {
     margin-left: 17%;
     margin-right: 0;
     position: relative;
     display: inline-block;
+}
+.lbl-switch {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background: #7aa0bc95;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+#btn-switch:checked~ .lbl-switch {
+    background: #00090e;
+}
+
+.lbl-switch::after {
+    position:absolute;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 100px;
+    top: 3px;
+    left: 5px;
+    transition: 0.3s;
+}
+#btn-switch:checked~ .lbl-switch::after {
+    left: 20px;
+
+}
+
+#btn-switch{
+    display: none;
 }
 
 button{
@@ -139,9 +185,14 @@ button{
 }
 
 button:hover {
-background:#00090e;
-color: white;
-border: none;
+    background:#00090e;
+    color: white;
+    border: none;
+    scale: 1.05;
+}
+
+button:active {
+    scale: 0.95;
 }
 
 .registrate{
