@@ -58,3 +58,17 @@ const fila = document.querySelector('.imagenes');
         fila.addEventListener('mouseleave', () => {
             peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
         });
+
+        const openModal = document.querySelector('.castillo-ambulante');
+        const modal = document.querySelector('.modal');
+        const closeModal = document.querySelector('.modal__close');
+        
+        openModal.addEventListener('click', (e)=>{
+            e.preventDefault();
+            modal.classList.add('modal--show');
+        });
+        
+        closeModal.addEventListener('click', (e)=>{
+            e.preventDefault();
+            modal.classList.remove('modal--show');
+        });

@@ -403,6 +403,176 @@ input {
 	flex-wrap: nowrap;
 }
 
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90%;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMTU1NTE5NjQ0OF5BMl5BanBnXkFtZTcwMzk1NzEyNw@@._V1_.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    border-radius: 25px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal__container::before {
+    content: '';
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.7;
+    border-radius: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal__año {
+    font-size: 18px;
+    color: #002638;
+    position: relative;
+    box-shadow: #000000;
+}
+
+
+.modal__info {
+    position: relative;
+    color: #002638;
+    text-shadow: #000000;
+}
+
+.modal__paragraph{
+    position: relative;
+    margin-bottom: 10px;
+    color: white;
+    max-width: 80%;
+    line-height: 1.5em;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.modal__generos {
+    position: relative;
+    color: white;
+    font-style: italic;
+
+}
+
+.modal__img {
+    height: 0px;
+    width: 60px;
+    
+}
+
+.modal__boton {
+    position: relative;
+    font-family: AvantGarde LT Mediana;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #091E28;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px -5px #08463a;
+    outline: none;
+}
+.modal__boton i {
+    margin-right: 10px;
+}
+
+.modal__boton:hover {
+    scale: 1.05;
+}
+
+.modal__boton:active {
+    scale: 0.95;
+}
+
+.modal__close{
+    position: relative;
+    color: #fff;
+    padding: 0.6em 0.8em;
+    display: inline-block;
+    transition: background-color .3s;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.modal__close:hover{
+    scale: 1.05;
+    color: #00090e;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.modal__close:active{
+    scale: 0.95;
+}
+
+@media (max-width:800px) {
+    .modal__container{
+        padding: 2em 1.5em;
+    }
+
+    .modal__title{
+        font-size: 2rem;
+    }
+}
+
+.carrusel .imagenes .el-castillo-ambulante .castillo-ambulante {
+    height: 400px;
+    width: 300px;
+    margin: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 25px;
+}
+.carrusel .imagenes .el-castillo-ambulante .castillo-ambulante:hover {
+    scale: 1.05;
+}
+
+.carrusel .imagenes .el-castillo-ambulante .castillo-ambulante:active{
+    scale: 0.95;
+}
+
+
 .carrusel .imagenes .pelicula {
 	min-width: 20%;
 	transition: .3s ease all;

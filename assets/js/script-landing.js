@@ -54,12 +54,10 @@ const peliRandom = (peliculas) => {
 
 const mifuncion = async () => {
   const response = await fetch(
-    ""
+    "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/assets/json/carrusel-home.json"
   );
   const data = await response.json();
-  const carruseles = document.querySelectorAll(".carousel");
-  const favoritos = document.querySelectorAll(".carousel_favourites");
-  const mainMovie = document.querySelector('.main-movie');
+  const carruseles = document.querySelectorAll(".carrusel");
   
    
 
@@ -109,35 +107,6 @@ const mifuncion = async () => {
     });
   };
 
-  for (let peli of data.favourites) {
-    let tarjeta = document.getElementById(peli.id);
-    tarjeta.addEventListener('click', () => {
-      const mainMovie = document.querySelector('.main-movie');
-      mainMovie.style.backgroundColor = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0))';
-      mainMovie.innerHTML = `
-      <div class="botones"><button role="button" class="boton"><i class="fa-solid fa-play"></i>Reproducir</button>
-      <button role="button" class="boton"><i class="fa-regular fa-bookmark"></i>Guardar</button>
-      <button class="adult">+18</button></div>
-      `;
-      const descripcion = document.createElement("p");
-      const titulo_banner = document.createElement("h3");
-      const img_title = document.createElement("img");
-      descripcion.classList.add("descripcion");
-      titulo_banner.classList.add("titulo");
-      img_title.src = peli.banner_title;
-      descripcion.innerHTML = `
-        ${peli.synopsis}
-        `;
-      mainMovie.appendChild(descripcion);
-      mainMovie.appendChild(titulo_banner);
-      titulo_banner.appendChild(img_title);
-      mainMovie.style.background = `linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0.855)), url(${peli.banner})`;
-      mainMovie.style.backgroundSize = 'cover';
-      return
-    });
-  };
-
-  mainMovie.style.backgroundColor = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0))';
 };
 
 mifuncion();
@@ -157,7 +126,7 @@ const togglebtn = document.querySelector('.toggle-btn')
             
         }
 /*Barra de navegacion con efecto scroll*/
-        window.addEventListener("scroll", function(){
+        window.addEventListener("scroll", () => {
             var header = document.querySelector("header");
             header.classList.toggle('down', window.scrollY > 0);
         });
@@ -240,7 +209,7 @@ const togglebtn = document.querySelector('.toggle-btn')
 
 /*slider*/
 var counter = 1;
-        setInterval(function(){
+        setInterval(() => {
             document.getElementById('radio' + counter).checked = true;
             counter++;
             if(counter > 4){
