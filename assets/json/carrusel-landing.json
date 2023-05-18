@@ -3,72 +3,72 @@
         {
             "id": 1,
             "title": "Totoro",
-            "imagen": "./IMG SECTION CATALOGO/TOTORO-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/TOTORO-POSTER.png?raw=true"
         },
 
         {
             "id": 2,
             "title": "Chihiro",
-            "imagen": "./IMG SECTION CATALOGO/CHIHIRO-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/CHIHIRO-POSTER.png?raw=true"
         },
 
         {
             "id": 3,
             "title": "Kiki",
-            "imagen": "./IMG SECTION CATALOGO/KIKI-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/KIKI-POSTER.png?raw=true"
         },
         {
             "id": 4,
             "title": "Princess",
-            "imagen": "./IMG SECTION CATALOGO/PRINCESS-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/PRINCESS-POSTER.png?raw=true"
         },
 
         {
             "id": 5,
             "title": "Ponyo",
-            "imagen": "./IMG SECTION CATALOGO/PONYO-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/PONYO-POSTER.png?raw=true"
         },
 
         {
             "id": 6,
             "title": "Only yesterday",
-            "imagen": "./IMG SECTION CATALOGO/ONLY YESTERDAY-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/ONLY%20YESTERDAY-POSTER.png?raw=true"
         },
 
         {
             "id": 7,
             "title": "Poppy hill",
-            "imagen": "./IMG SECTION CATALOGO/FROM UP ON POPPY HILL-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/FROM%20UP%20ON%20POPPY%20HILL-POSTER.png?raw=true"
         },
 
         {
             "id": 8,
             "title": "Ocean waves",
-            "imagen": "./IMG SECTION CATALOGO/OCEAN WAVES-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/OCEAN%20WAVES-POSTER.png?raw=true"
         },
 
         {
             "id": 9,
             "title": "Pompoko",
-            "imagen": "./IMG SECTION CATALOGO/POMPOKO-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/POMPOKO-POSTER.png?raw=true"
         },
 
         {
             "id": 10,
             "title": "Marnie",
-            "imagen": "./IMG SECTION CATALOGO/MARNIE-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/MARNIE-POSTER.png?raw=true"
         },
 
         {
             "id": 11,
             "title": "Tales from Earthsea",
-            "imagen": "./IMG SECTION CATALOGO/TALES FROM EARTHSEA-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/TALES%20FROM%20EARTHSEA-POSTER.png?raw=true"
         },
 
         {
             "id": 12,
             "title": "Porco Rosse",
-            "imagen": "./IMG SECTION CATALOGO/PORCO ROSSO-POSTER"
+            "imagen": "https://github.com/Manuelard03/GHIFLIX/blob/main/1.%20LANDING%20PAGE/IMG%20SECTION%20CATALOGO/PORCO%20ROSSO-POSTER.png?raw=true"
         }
 
     ]
