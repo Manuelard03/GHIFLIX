@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@100;300;400;500&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@100;300;400;500&display=swap"
         rel="stylesheet">
-    <title>GHIFLIX</title>
     <link rel="stylesheet" href="./styles-home.css">
+    <link rel="icon" href="./img/LOGO SIMPLE AZUL OSCURO.ico">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <title>GHIFLIX</title>
 </head>
 
 <body>
     <header>
         <div class="contenedor">
-            <img class="Logotipo" src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\1-LOGO.png" alt=""
-                height="60px" width="130px">
+            <img class="Logotipo" src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\1-LOGO.png">
             <nav>
                 <a href="#">Películas</a>
                 <a href="#">Catálogo</a>
@@ -26,16 +29,18 @@
             </nav>
 
             <section class="container">
-                <form autocomplete="off">
-                    <div>
-                        <input type="text" name="q" placeholder="Buscar una película...">
+                
+                    <div class="buscar">
+                        <input type="text" placeholder="Buscar una película...">
+                        <div class="btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
                     </div>
-                </form>
-
+                
                 <div class="perfil">
                     <a href="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\6. CONFIGURACION\index-confi.html">
                         <img class="logo-perfil"
-                        src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\0-PERFIL-LOGO.png"alt="">
+                        src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\0-PERFIL-LOGO.png">
                     </a>
                 </div>
             </section>
@@ -48,11 +53,10 @@
     <main>
         <div class="fondo-principal">
             <div class="contenedor">
-                <img src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\3-TITULO-PELICULA-PRINCIPAL.png"
-                    alt="">
+                <img class="titulo" src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\3-TITULO-PELICULA-PRINCIPAL.png">
                 <div class="botones">
-                    <button role="button" class="boton2">Reproducir</button>
-                    <button role="button" class="boton3">Mas información</button>
+                    <button role="button" class="boton2"><i class="fa-solid fa-play"></i> Reproducir</button>
+                    <button role="button" class="boton3"><i class="fa-solid fa-circle-info"></i> Mas información</button>
                 </div>
                 <div class="genero">
                     <img src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\4-CLASIFICACION-EDAD.png"
@@ -62,55 +66,110 @@
             </div>
         </div>
 
-        <section class="buscados">
-            <div class="intro">
-                <h3 class="titulo">LOS MÁS BUSCADOS</h3>
-                <hr class="divisor2">
+        <section class="buscados" id="buscados">
+                <div class="intro">
+                    <h3 class="titulo">LOS MÁS BUSCADOS</h3>
+                    <hr class="divisor2">
+                </div>
+        
+            <div class="carrusel">
+                <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+                    <div class="imagenes">
+                        <div class="pelicula">
+                            <img class="castillo-ambulante"src="https://i.pinimg.com/564x/c5/6f/04/c56f04b688a5d6b914bd0279911803de.jpg">
+                        </div>
+                        <div class="pelicula">
+                            <img class="ponyo" src="https://i.pinimg.com/564x/ca/08/d7/ca08d76867f04d3c7dda781e07804125.jpg">
+                        </div>
+                        <div class="pelicula">
+                            <img class="mononoke" src="https://i.pinimg.com/564x/c6/aa/27/c6aa27796f9a3137929bd4b0e80f24ba.jpg">
+                        </div>
+                        <div class="pelicula">
+                            <img class="luciernagas" src="https://i.pinimg.com/564x/f6/13/9d/f6139d9c18163f23f7a893d520c22260.jpg">
+                        </div>
+                        <div class="pelicula">
+                            <img class="nausica" src="https://i.pinimg.com/564x/81/df/ff/81dfffa250a22736e464b83482a853fc.jpg">
+                        </div>
+                        <div class="pelicula">
+                            <img class="totoro" src="https://i.pinimg.com/564x/a3/e7/93/a3e79321567957b465b21753d59812f7.jpg">
+                        </div>
+                        <div class="pelicula">
+                            <img class="kiki" src="https://i.pinimg.com/564x/2b/8c/39/2b8c39e7d4a384ca6ccc1b9b1e24107d.jpg">
+                        </div>
+                        <div class="pelicula">
+                            <img class="chihiro" src="https://i.pinimg.com/564x/61/15/bf/6115bfcc686b71a1db221ea5ee63dbff.jpg">
+                        </div>
+                        <div class="pelicula">
+                            <img class="porco" src="https://i.pinimg.com/564x/17/60/3e/17603e13a562d36f89eb19b22f73573d.jpg">
+                        </div>
+                        <div class="pelicula">
+                            <img class="whisper" src="https://i.pinimg.com/564x/cd/5e/75/cd5e7506601711b66b8674f50af2bff9.jpg">
+                        </div>
+                    </div>
+                <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
             </div>
-        </section>
-        <div class="imagenes">
-            <img class="castillo-ambulante"
-                src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\5-POSTER-EL-CASTILLO-AMBULANTE.png">
-            <img class="ponyo" src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\6-POSTER-PONYO.png"
-                alt="">
-            <img class="mononoke"
-                src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\7-POSTER-MONONOKE.png" alt="">
-        </div>
-
-        <section class="viendo">
-            <div class="intro">
-                <h3 class="titulo">CONTINUAR VIENDO...</h3>
-                <hr class="divisor">
-            </div>
-
-            <div class="peliculas">
-                <img class="pelicula"
-                    src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\9-NAUSICA-CONTINUAR VIENDO.png"
-                    alt="">
-                <img class="pelicula2"
-                    src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\10-LOS-YAMADA-CONTINUAR VIENDO.png"
-                    alt="">
-                <img class="pelicula3"
-                    src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\11-PELICULA 3-CONTINUAR VIENDO.png"
-                    alt="">
-            </div>
-        </section>
-
-        <section class="recomendado">
-            <div class="intro">
-                <h3 class="titulo">TE RECOMENDAMOS</h3>
-                <hr class="divisor">
-            </div>
-
-            <div class="pelicula">
-                <img class="arrietty"
-                    src="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\5. HOME PAGE\img\12-PELICULA-ARRIETY.png" alt="">
-            </div>
-
+            <div class="indicadores"></div>
         </section>
 
+            <section class="viendo" id="viendo">
+                <div class="intro">
+                    <h3 class="titulo">CONTINUAR VIENDO...</h3>
+                    <hr class="divisor">
+                </div>
 
+                <div class="carrusel-2">
+                    
+                        <div class="imagenes">
+                            <div class="pelicula">
+                                <img class="nausica"src="https://github.com/Manuelard03/GHIFLIX/blob/main/5.%20HOME%20PAGE/img/9-NAUSICA-CONTINUAR%20VIENDO.png?raw=true">
+                            </div>
+                            <div class="pelicula">
+                                <img class="yamada" src="https://i.pinimg.com/564x/65/3f/b9/653fb9c1aad448696e51159dd26d8bcf.jpg">
+                            </div>
+                            <div class="pelicula">
+                                <img class="earthsea" src="https://i.pinimg.com/564x/5e/29/cf/5e29cf3765b179c3cadac8e0c33a1a29.jpg">
+                            </div>
+                            
+                </div>
+            </section>
+
+            <section class="recomendado" id="recomendacion">
+                <div class="intro">
+                    <h3 class="titulo">TE RECOMENDAMOS</h3>
+                    <hr class="divisor">
+                </div>
+                <div class="pelicula">
+                    <img class="arrietty"
+                    src="https://github.com/Manuelard03/GHIFLIX/blob/main/5.%20HOME%20PAGE/img/12-PELICULA-ARRIETY.png?raw=true">
+                </div>
+            </section>
     </main>
+
+
+    <footer>
+        <div class="footer--contenedor">
+            <div class="informacion">
+                <p>Preguntas frecuentes</p>
+                <p>Prensa</p>
+                <p>Formas de ver</p>
+                <p>Preferencias de cookies</p>
+                <p>Pruebas de velocidad</p>
+                <p>Centro de ayuda</p>
+                <p>Relaciones con inversionistas</p>
+                <p>Terminos de uso</p>
+                <p>Informacion corporativa</p>
+                <p>Cuenta</p>
+                <p>Empleo</p>
+                <p>Privacidad</p>
+                <p>Contactanos</p>
+                <p>Solo en Ghiflix</p>
+            </div>
+            <p class="idioma">🌎︎ Español</p>
+            <p class="contruccion">GHIFLIX</div>
+
+        <script src="../assets/js/script-home.js"></script>
+    </footer>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

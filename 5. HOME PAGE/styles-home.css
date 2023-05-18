@@ -20,6 +20,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+body::-webkit-scrollbar{
+    width: 9px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #00141f;
+    border-radius: 5px;
+}
 .contenedor {
     width: 100%;
     margin: auto;
@@ -27,6 +35,7 @@ body {
 
 header {
     padding: 0 0;
+    display: flex;
 }
 
 header .contenedor {
@@ -35,7 +44,20 @@ header .contenedor {
     align-items: center;
     position: fixed;
     padding: 50px 60px;
+}
 
+.contenedor .Logotipo {
+    max-width: 150px;
+    cursor: pointer;
+    transition: .3s ease all
+}
+
+.contenedor .Logotipo:hover {
+    scale: 1.09;
+}
+
+.contenedor .Logotipo:active{
+    scale: 0.95;
 }
 
 header nav {
@@ -44,56 +66,84 @@ header nav {
     height: 21px;
     left: 297px;
     top: 97px;
+    font-weight: 560;
 }
 
 header nav a {
     color: #091E28;
     text-decoration: none;
     margin: 20px;
+    cursor: pointer;
+    transition: .3s ease all
 }
 
 header nav a:hover, header nav a.activo {
     color: white;
+    font-weight: 400;
+    scale: 1.09;
 }
-
-
 
 .container {
     display: flex;
 }
 
+.buscar {
+	position: absolute;
+	left: 75%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+}
+
 input {
-	font:inherit;
-}
-
-form {
-    position: absolute;
-    left: 950px;
-    top: 60px;
-}
-
-form > div {
-	display: flex;
-    background:#091e28a1;
-	padding: 9px 22px 9px 26px;
-	border-radius: 30px;
-	border:none;
-}
-form input {
-	border:none;
-	background: transparent;
-    color: white;
-    font-family: AvantGarde LT Mediana;
-	font-weight: lighter;
-	padding-left: 24px;
-	background-size: 16px;
-	background-repeat: no-repeat;
-	width: 0px;
-	transition: all 1s;
-}
-form input:focus {
 	outline: none;
-	width: 300px;
+	box-sizing: border-box;
+	height: 35px;
+	width: 0px;
+	padding: 0 20px;
+	color: white;
+    background: #071b24b2;
+	border-radius: 50px;
+	font-size: 18px;
+	border: none;
+	transition: all .7s ease;
+}
+
+::placeholder {
+	color: white;
+}
+
+.btn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 50px;
+	height: 50px;
+	background: #00090e;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn i {
+	font-size: 20px;
+	color: white;
+	line-height: 50px;
+	transition: all .7s ease;
+}
+
+.buscar:hover input {
+	width: 350px;
+}
+
+.buscar:hover i{
+	transform: rotate(-360deg);
+}
+
+.btn:hover{
+	background: #00090e;
 }
 
 .perfil .logo-perfil {
@@ -102,11 +152,21 @@ form input:focus {
     height: 80px;
     left: 1200px;
     top: 30px;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.perfil .logo-perfil:hover {
+    scale: 1.1;
+}
+
+.perfil .logo-perfil:active {
+    scale: 0.95;
 }
 
 .fondo-principal {
     font-size: 16px;
-    min-height: 55em;
+    min-height: 48em;
     color: white;
     background: url(./img/2-FONDO-PELICULA-PRINCIPAL.png);
     background-position: center center;
@@ -119,20 +179,22 @@ form input:focus {
 .fondo-principal .contenedor {
     margin: 0 auto;
     margin-bottom: 15em;
-    padding: 50px 60px;
+    padding: 0px 60px;
 }
 
-.fondo-principal .divisor {
-    width: 450px;
-    margin-bottom: 20px;
+.fondo-principal .contenedor .titulo {
+    width: 650px;
+    padding-left: 50px;
+    cursor: pointer;
+    transition: all .7s ease;
 }
 
-.fondo-principal .descripcion {
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 1.75em;
-    max-width: 40%;
-    margin-bottom: 1.25em;
+.fondo-principal .contenedor .titulo:hover {
+    scale: 1.03;
+}
+
+.fondo-principal .contenedor .titulo:active {
+    scale: 0.95;
 }
 
 .fondo-principal .boton2 {
@@ -145,11 +207,21 @@ form input:focus {
     border: none;
     font-size: 16px;
     cursor: pointer;
-    transition: .3s ease all;
+    transition: .5s ease all;
     position: absolute;
     left: 132px;
-    top: 644px;
+    top: 600px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.fondo-principal .boton2:hover {
+    background: rgba(0, 0, 0, 0.473);
+    border: none;
+    scale: 1.1;
+}
+
+.fondo-principal .boton2:active {
+    scale: 0.95;
 }
 
 .fondo-principal .boton3 {
@@ -166,8 +238,18 @@ form input:focus {
     position: absolute;
     position: absolute;
     left: 388px;
-    top: 644px;
+    top: 600px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.fondo-principal .boton3:hover {
+    background: #091E28;
+    border: none;
+    scale: 1.1;
+}
+
+.fondo-principal .boton3:active {
+    scale: 0.95;
 }
 
 .contenedor .genero {
@@ -176,6 +258,11 @@ form input:focus {
     height: 66px;
     left: 1200px;
     top: 409px;
+    transition: .3s ease all;
+}
+
+.contenedor .genero:hover {
+    scale: 1.1;
 }
 
 .contenedor .genero .texto {
@@ -194,16 +281,6 @@ form input:focus {
 .buscados .intro {
     font-size: 16px;
     min-height: 10px;
-    color: white;
-}
-
-.buscados .titulo {
-    font-family: AvantGarde LT Mediana;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 1.75em;
-    max-width: 90%;
-    margin-bottom: 5px;
     color: white;
 }
 
@@ -228,16 +305,10 @@ form input:focus {
     
 }
 
-.buscados .intro {
-    font-size: 16px;
-    min-height: 10px;
-    color: white;
-}
-
 .buscados .titulo {
     font-family: AvantGarde LT Mediana;
     font-weight: normal;
-    font-size: 33px;
+    font-size: 30px;
     line-height: 1.75em;
     max-width: 90%;
     margin-top: 15px;
@@ -245,43 +316,143 @@ form input:focus {
     color: white;
 }
 
-.buscados .divisor3 {
-    width: 1225px;
-    margin-bottom: 20px;
-    color: white;
+.indicadores{
+    padding-left: 553px;
+}
+.buscados .indicadores button {
+	background:#002a42bd;
+	height: 20px;
+	width: 20px;
+    border-radius: 50px;
+	cursor: pointer;
+	border: none;
+    margin: 10px;
+    transition: .2s ease all;
+}
+.buscados .indicadores button:hover{
+    background: #00090e81;
+}
+.buscados .indicadores button.activo {
+    background: #00090e;
+    scale: 1.05;
 }
 
+.buscados .indicadores button:active{
+    scale: 0.95;
+}
 
+.buscados .carrusel .flecha-izquierda {
+	position: absolute;
+	border: none;
+	background: none;
+	font-size: 40px;
+	height: 50%;
+	line-height: 40px;
+	width: 50px;
+	color: white;
+	cursor: pointer;
+	transition: .2s ease all;
+    margin-top: 80px;
+    margin-right: 200px;
+}
+
+.buscados .carrusel .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: none;
+	font-size: 40px;
+	height: 50%;
+	width: 50px;
+	color: white;
+	cursor: pointer;
+	transition: .2s ease all;
+    left: 95%;
+    margin-top: -445px;
+}
+
+.buscados .carrusel .flecha-izquierda:hover,
+.buscados .carrusel .flecha-derecha:hover {
+	background: none;
+	color: #010f16;
+    scale: 1.05;
+}
+
+.buscados .carrusel .flecha-izquierda:active,
+.buscados .carrusel .flecha-derecha:active{
+    scale: 0.95;
+}
+
+.buscados .carrusel .flecha-izquierda {
+	left: 0;
+}
+
+.buscados .carrusel .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.carrusel .imagenes {
+	width: 100%;
+	padding: 20px 0px;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.imagenes .carrusel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.carrusel .imagenes .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	margin: 20px;
+    cursor: pointer;
+}
+
+.carrusel .imagenes .pelicula:hover {
+	scale: 1.05;
+	transform-origin: center;
+}
+
+.carrusel .imagenes .pelicula:active{
+    scale: 0.95;
+}
+
+.carrusel .imagenes .pelicula img {
+	width: 100%;
+	vertical-align: top;
+	border: none;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 800px) {
+	
+	.buscados .imagenes {
+		overflow: visible;
+	}
+
+	.buscados .carrusel .imagenes {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.buscados .indicadores,
+	.buscados .flecha-izquierda,
+	.buscados .flecha-derecha {
+		display: none;
+	}
+}
 .buscados .imagenes {
     display: flex;
-    width: 800px;
-    height: 500px;
 }
 
-.imagenes .castillo-ambulante {
+.carrusel .imagenes img{
+	height: 400px;
+    width: 450px;
     margin: 20px;
-    margin-left: 50px;
-    width: 396px;
-    height: 530px;
 }
-
-.imagenes .ponyo {
-    margin: 20px;
-    width: 335px;
-    height: 460px;
-    left: 537px;
-    top: 1154px;
-}
-
-.imagenes .mononoke {
-    margin: 20px;
-    width: 335px;
-    height: 461px;
-    left: 932px;
-    top: 1154px;
-
-}
-
 
 .viendo {
     margin: 0 auto;
@@ -297,7 +468,7 @@ form input:focus {
 .viendo .titulo {
     font-family: AvantGarde LT Mediana;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.75em;
     max-width: 90%;
     margin-bottom: 5px;
@@ -310,85 +481,72 @@ form input:focus {
     color: white;
 }
 
-.viendo .peliculas {
+#viendo .carrusel-2 {
     display: flex;
 }
 
-.peliculas .pelicula {
-    position: absolute;
+.carrusel-2 .imagenes {
     width: 549px;
     height: 366px;
-    left: 70px;
-    top: 1816px;
+    display: flex;
 }
 
 
-.peliculas .pelicula2 {
+.viendo .imagenes {
+    display: flex;
+}
+.carrusel-2 .imagenes .pelicula .nausica {
     position: absolute;
-    width: 560px;
-    height: 366px;
-    left: 660px;
-    top: 1816px;
-
-}
-
-.peliculas .pelicula3 {
-    position: absolute;
-    width: 90px;
-    height: 366px;
-    left: 1259px;
-    top: 1816px;
-}
-
-
-.formulario h3 {
-    font-family: AvantGarde LT Mediana;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 1.75em;
-    color: white;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    margin-left: 98px;
-
-}
-
-.controls {
-    width: 100%;
-    color: white;
-    background-color: #7aa0bc8a;
-    padding: 10px;
-    border-radius: 30px;
-    margin-bottom: 20px;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-}
-
-.formulario .botons {
-    display: inline-block;
-    padding: 11px 25px;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    border-radius: 30px;
-    border: 1.8px solid white;
-    font-size: 16px;
+    width: 400px;
+    height: 260px;
     cursor: pointer;
     transition: .3s ease all;
-    margin: 16px 0;
-    margin-left: 110px;
+}
+.carrusel-2 .imagenes .pelicula .nausica:hover{
+    scale: 1.05;
 }
 
-.formulario .botons:hover {
-    background:#1ac0a2;
-    color: white;
-    border: none;
+.carrusel-2 .imagenes .pelicula .nausica:active{
+    scale: 0.95;
 }
+
+.carrusel-2 .imagenes .pelicula .yamada {
+    position: absolute;
+    width: 400px;
+    height: 260px;
+    left: 480px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.carrusel-2 .imagenes .pelicula .yamada:hover{
+    scale: 1.05;
+}
+.carrusel-2 .imagenes .pelicula .yamada:active{
+    scale: 0.95;
+}
+
+.carrusel-2 .imagenes .pelicula .earthsea {
+    position: absolute;
+    width: 400px;
+    height: 260px;
+    left: 900px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.carrusel-2 .imagenes .pelicula .earthsea:hover{
+    scale: 1.05;
+}
+.carrusel-2 .imagenes .pelicula .earthsea:active{
+    scale: 0.95;
+}
+
 
 .recomendado {
     border: 50px;
     margin: 0 auto;
-    padding: 500px 50px;
+    padding: 0px 50px;
     padding-bottom: 50px;
 }
 
@@ -401,7 +559,7 @@ form input:focus {
 .recomendado .titulo {
     font-family: AvantGarde LT Mediana;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.75em;
     max-width: 90%;
     margin-bottom: 5px;
@@ -415,9 +573,55 @@ form input:focus {
 }
 
 .recomendado .pelicula .arriety {
-    position: absolute;
-    width: 1254px;
-    height: 914px;
+    width: 80px;
+    height: 20px;
     left: 93px;
     top: 2338px;
+}
+
+/* footer */
+.footer{
+    padding-top: 20px;
+    background-color: black;
+}
+.footer--contenedor{
+    width: 95%;
+    margin-inline:auto;
+}
+
+.informacion{
+    display: grid;
+    color: #00080c;
+    gap: 20px;
+    margin-block:20px;
+    font-size: 15px;
+}
+@media (min-width:400px) {
+    .informacion{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:768px) {
+    .informacion{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:992px) {
+    .informacion{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.informacion p:hover{
+    color: white;
+}
+.idioma{
+    color: white;
+    padding: 8px;
+    font-weight: 500;
+}
+.contruccion{
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    text-align: center;
 }
